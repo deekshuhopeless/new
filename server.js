@@ -10,6 +10,9 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile('login.html', { root: './src' });
 });
+app.get('/register', (req, res) => {
+    res.sendFile('register.html', { root: './src' });
+});
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
